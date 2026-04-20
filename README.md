@@ -41,6 +41,49 @@ copilot plugin marketplace add 6ogo/ACC-Agent
 copilot plugin install acc-agent@acc-agent-marketplace
 ```
 
+### VS Code Copilot Chat
+
+**Prerequisites:** VS Code with the [GitHub Copilot Chat](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat) extension.
+
+**Workspace install** (agents available only when this repo is open):
+
+```bash
+git clone https://github.com/6ogo/ACC-Agent.git
+code ACC-Agent
+```
+
+**Global install** (agents available in every VS Code workspace):
+
+```bash
+# Windows (PowerShell)
+git clone https://github.com/6ogo/ACC-Agent.git
+powershell -ExecutionPolicy Bypass -File ACC-Agent\scripts\install-copilot-global.ps1
+
+# Mac / Linux
+git clone https://github.com/6ogo/ACC-Agent.git
+bash ACC-Agent/scripts/install-copilot-global.sh
+```
+
+Restart VS Code after running the script.
+
+**Using agents:** Open Copilot Chat, click the agent dropdown, and select one of the 4 ACC agents.
+
+| Agent | What it does |
+|---|---|
+| `acc-developer` | Writes ACC code (JSSP, JSP, QueryDef, NLWS) grounded in the wiki |
+| `acc-troubleshooter` | Diagnoses errors using symptom→diagnosis→fix |
+| `acc-walkthrough-guide` | Step-by-step tutorials from the 8 example walkthroughs |
+| `acc-wiki-librarian` | Returns wiki file paths and section anchors |
+
+**Using prompts:** Type `/` in the Chat input to invoke a prompt directly.
+
+| Prompt | Purpose |
+|---|---|
+| `/acc-develop <request>` | Switches to acc-developer with your request |
+| `/acc-fix <issue>` | Switches to acc-troubleshooter with your issue |
+| `/acc-walkthrough <goal>` | Switches to acc-walkthrough-guide with your goal |
+| `/acc-find <topic>` | Switches to acc-wiki-librarian with your topic |
+
 ## Grounded in LF-ACC-Wiki
 
 The agents answer from a bundled snapshot of the [LF-ACC-Wiki](https://github.com/6ogo/LF-ACC-Wiki) — a curated knowledge base covering:
