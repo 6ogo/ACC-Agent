@@ -1,0 +1,13 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "acc-agent-marketplace",
+  "description": "Adobe Campaign Classic agent plugin by George Yakoub",
+  "owner": { "name": "George Yakoub", "email": "georgeyakoub@gmail.com" },
+  "plugins": [{
+    "name": "acc-agent",
+    "description": "ACC developer/troubleshooter/walkthrough agents grounded in LF-ACC-Wiki",
+    "category": "development",
+    "source": { "source": "url", "url": "https://github.com/6ogo/ACC-Agent.git" },
+    "homepage": "https://github.com/6ogo/ACC-Agent"
+  }]
+}

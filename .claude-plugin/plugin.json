@@ -1,0 +1,10 @@
+{
+  "name": "acc-agent",
+  "version": "0.1.0",
+  "description": "Adobe Campaign Classic agents — develop, troubleshoot, and walk through ACC grounded in the LF-ACC-Wiki.",
+  "author": { "name": "George Yakoub", "email": "georgeyakoub@gmail.com", "url": "https://github.com/6ogo" },
+  "homepage": "https://github.com/6ogo/ACC-Agent",
+  "repository": "https://github.com/6ogo/ACC-Agent",
+  "license": "MIT",
+  "keywords": ["adobe-campaign-classic", "acc", "jssp", "jsp", "querydef", "nlws", "workflow", "delivery"]
+}
