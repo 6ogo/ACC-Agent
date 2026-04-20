@@ -45,12 +45,26 @@ copilot plugin install acc-agent@acc-agent-marketplace
 
 **Prerequisites:** VS Code with the [GitHub Copilot Chat](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat) extension.
 
-**Install:** Clone the repo and open it as a VS Code workspace — the agents and prompts are discovered automatically.
+**Workspace install** (agents available only when this repo is open):
 
 ```bash
 git clone https://github.com/6ogo/ACC-Agent.git
 code ACC-Agent
 ```
+
+**Global install** (agents available in every VS Code workspace):
+
+```bash
+# Windows (PowerShell)
+git clone https://github.com/6ogo/ACC-Agent.git
+powershell -ExecutionPolicy Bypass -File ACC-Agent\scripts\install-copilot-global.ps1
+
+# Mac / Linux
+git clone https://github.com/6ogo/ACC-Agent.git
+bash ACC-Agent/scripts/install-copilot-global.sh
+```
+
+Restart VS Code after running the script.
 
 **Using agents:** Open Copilot Chat, click the agent dropdown, and select one of the 4 ACC agents.
 
