@@ -30,7 +30,7 @@ Adobe Campaign Classic agents for Claude Code and Copilot CLI — develop, troub
 /plugin install acc-agent@acc-agent-marketplace
 
 # Option 2: Install from local directory (for development/testing)
-cc --plugin-dir C:/Users/b816i1/Git/ACC-Agent
+claude --plugin-dir C:/Users/b816i1/Git/ACC-Agent
 ```
 
 ### GitHub Copilot CLI
